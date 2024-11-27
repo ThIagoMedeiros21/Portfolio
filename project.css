@@ -1,0 +1,116 @@
+/* Estilos globais */
+body {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff0000, #2c3e50);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Seção de Trabalhos */
+#work {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Título principal */
+#work h1 {
+    font-size: 2.5rem;
+    color: #ffeb3b;
+    margin-bottom: 20px;
+}
+
+/* Projetos individuais */
+.project {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Imagens dos projetos */
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffffff30; /* Borda translúcida */
+}
+
+/* Título dos projetos */
+.project h2 {
+    font-size: 1.8rem;
+    color: #e3f2fd;
+    margin-bottom: 10px;
+}
+
+/* Descrição dos projetos */
+.project p {
+    font-size: 1rem;
+    color: #cfd8dc;
+}
+
+/* Botão de retorno */
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0c00f8;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none; /* Remove o sublinhado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+}
+
+.button:hover {
+    background-color: ##0c00f8;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Realça a sombra no hover */
+}
+
+.button:focus {
+    outline: 2px solid #0c00f8;
+    outline-offset: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #work {
+        padding: 20px;
+    }
+
+    #work h1 {
+        font-size: 2rem;
+    }
+
+    .project h2 {
+        font-size: 1.5rem;
+    }
+
+    .project p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
